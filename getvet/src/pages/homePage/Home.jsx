@@ -1,6 +1,9 @@
 
-import style from './Home.module.css'
+import { useEffect } from 'react';
+import style from './Home.module.css'    
+
 function Home() {
+
 
     return (
         <div>
@@ -9,7 +12,7 @@ function Home() {
                 <p>Your trusted platform for better animal health and care</p>
 
                 <div className={style.languageSelector}>
-                    <select id="language-selector">
+                    <select >
                         <option value="en">English</option>
                         <option value="am">አማርኛ</option>
                         <option value="or">Afaan Oromoo</option>
