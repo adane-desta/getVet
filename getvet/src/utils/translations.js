@@ -1,4 +1,5 @@
 
+
 const translations = {
     en: {
         title: "Welcome to the Animal Health Advisory System",
@@ -13,7 +14,7 @@ const translations = {
         ],
         login: "Login",
         joinUs: "Join Us",
-        footer: "&copy; 2025 Animal Health Advisory System. All Rights Reserved."
+        footer: " Animal Health Advisory System. All Rights Reserved."
     },
     am: {
         title: "እንኳን ወደ እንስሳት ጤና አማካሪ ስርዓት በሰላም መጡ",
@@ -28,7 +29,7 @@ const translations = {
         ],
         login: "መግቢያ",
         joinUs: "አባል ይሁኑ",
-        footer: "&copy; 2025 እንስሳት ጤና አማካሪ ስርዓት። መብቱ በተጠበቀ ነው።"
+        footer: " እንስሳት ጤና አማካሪ ስርዓት። መብቱ በተጠበቀ ነው።"
     },
     or: {
         title: "Baga Nagaan Dhuftan Gara Sirna Gorsa Fayyaa Horii",
@@ -43,6 +44,8 @@ const translations = {
         ],
         login: "Galmaa’i",
         joinUs: "Hirmaadhu",
-        footer: "&copy; 2025 Sirna Gorsa Fayyaa Horii. Mirga Hunda Ni Eegama."
+        footer: " Sirna Gorsa Fayyaa Horii. Mirga Hunda Ni Eegama."
     }
 };
+
+export default translations;

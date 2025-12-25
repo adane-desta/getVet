@@ -1,18 +1,27 @@
 
-import { useEffect } from 'react';
+import { useState} from 'react';
 import style from './Home.module.css'    
+import translations from '../../utils/translations';
 
 function Home() {
+
+    const [lang , setLang] = useState('en')
+
+    const content = translations[lang]
 
 
     return (
         <div>
             <header>
-                <h1>Welcome to the Animal Health Advisory System</h1>
-                <p>Your trusted platform for better animal health and care</p>
+                <h1>{content.title}</h1>
+                <p>{content.subtitle}</p>
 
                 <div className={style.languageSelector}>
-                    <select >
+                    <select onChange={(event) => {
+
+                        setLang(event.target.value)
+
+                    }}>
                         <option value="en">English</option>
                         <option value="am">አማርኛ</option>
                         <option value="or">Afaan Oromoo</option>
@@ -22,39 +31,26 @@ function Home() {
             </header>
 
             <section className={style.features}>
-                <div className={style.featureCard}>
-                    <h3>For Farmers</h3>
-                    <p>Get expert advice to keep your livestock healthy and productive.</p>
-                </div>
-                <div className={style.featureCard}>
-                    <h3>For Veterinarians</h3>
-                    <p>Collaborate with farmers and share your expertise to improve animal care.</p>
-                </div>
-                <div className={style.featureCard}>
-                    <h3>Resources</h3>
-                    <p>Access a wealth of knowledge, articles, and guides tailored to animal health.</p>
-                </div>
-                <div className={style.featureCard}>
-                    <h3>Appointments</h3>
-                    <p>Schedule and manage appointments efficiently through our platform.</p>
-                </div>
-                <div className={style.featureCard}>
-                    <h3>News and Updates</h3>
-                    <p>Stay informed with the latest trends and news in animal health.</p>
-                </div>
-                <div className={style.featureCard}>
-                    <h3>Ask Questions</h3>
-                    <p>Post your questions and get answers from veterinary experts.</p>
-                </div>
+                {
+                    content.features.map((feature , index) => (
+                        <div className ={style.featureCard} key={index}>
+
+                            <h3>{feature.title}</h3>
+                            <p>{feature.description}</p>
+
+                        </div>
+                        
+                    ))
+                }
             </section>
 
             <div className={style.buttons}>
-                <a href="/frontEnd/html-files/loginpage.html">Login</a>
-                <a href="/join-us.html">Join Us</a>
+                <a href="/frontEnd/html-files/loginpage.html">{content.login}</a>
+                <a href="/join-us.html">{content.joinUs}</a>
             </div>
 
             <footer>
-                <p>&copy; 2025 Animal Health Advisory System. All Rights Reserved.</p>
+                <p>&copy; {new Date().getFullYear()} { content.footer}</p>
             </footer>
 
         </div>
