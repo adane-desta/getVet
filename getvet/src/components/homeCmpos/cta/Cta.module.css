@@ -1,0 +1,14 @@
+.ctaSection {
+  padding: 6rem 2rem;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: white;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1.5rem;
+}

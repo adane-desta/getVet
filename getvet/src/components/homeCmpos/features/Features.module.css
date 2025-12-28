@@ -1,0 +1,30 @@
+.features {
+  padding: 6rem 2rem;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.featureCard {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.featureIcon {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.featureList {
+  margin-top: 1rem;
+}
+
+.featureList li {
+  margin-bottom: 0.5rem;
+}

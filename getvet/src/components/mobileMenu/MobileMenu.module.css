@@ -1,0 +1,96 @@
+/* Mobile Menu */
+.mobileNav {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100%;
+    background-color: white;
+    z-index: 999;
+    box-shadow: var(--shadow-xl);
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mobileNav.active {
+    left: 0;
+  }
+  
+  .mobileNavHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--gray-light);
+  }
+  
+  .mobileCloseBtn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--gray-color);
+    cursor: pointer;
+  }
+  
+  .mobileNavLinks {
+    flex: 1;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .mobileNavLink {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--dark-color);
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition);
+  }
+  
+  .mobileNavLink i {
+    width: 24px;
+    text-align: center;
+    color: var(--gray-color);
+  }
+  
+  .mobileNavLink.active,
+  .mobileNavLink:hover {
+    background-color: rgba(16, 185, 129, 0.1);
+    color: var(--primary-color);
+  }
+  
+  .mobileNavLink.active i,
+  .mobileNavLink:hover i {
+    color: var(--primary-color);
+  }
+  
+  .mobileNavLink.highlight {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+  }
+  
+  .mobileNavLink.highlight i {
+    color: white;
+  }
+  
+  .mobileLanguage {
+    padding: 1.5rem;
+    border-top: 1px solid var(--gray-light);
+  }
+  
+  #mobileLanguageSelector {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--gray-light);
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    background-color: white;
+    color: var(--dark-color);
+  }
