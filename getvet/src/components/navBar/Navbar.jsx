@@ -1,31 +1,28 @@
-
+import styles from './Navbar.module.css';
 
 function Navbar() {
-
     return (
-
         <div>
-
             {/* Header */}
-            <header className="header">
-                <div className="headerContainer">
-                    <div className="logo">
+            <header className={styles.header}>
+                <div className={styles.headerContainer}>
+                    <div className={styles.logo}>
                         <i className="fas fa-heartbeat"></i>
                         <span>AnimalHealth</span>
                     </div>
 
-                    <nav className="desktopNav">
+                    <nav className={styles.desktopNav}>
                         <a href="#features">Features</a>
                         <a href="#howItWorks">How It Works</a>
                         <a href="#testimonials">Testimonials</a>
-                        <a href="/frontEnd/html-files/loginpage.html" className="loginBtn">
+                        <a href="/frontEnd/html-files/loginpage.html" className={styles.loginBtn}>
                             Login
                         </a>
-                        <a href="/join-us.html" className="joinBtn">
+                        <a href="/join-us.html" className={styles.joinBtn}>
                             Join Now
                         </a>
 
-                        <div className="languageSelector">
+                        <div className={styles.languageSelector}>
                             <select id="languageSelector">
                                 <option value="en">🇬🇧 EN</option>
                                 <option value="am">🇪🇹 AM</option>
@@ -34,12 +31,11 @@ function Navbar() {
                         </div>
                     </nav>
 
-                    <button className="mobileMenuBtn">
+                    <button className={styles.mobileMenuBtn}>
                         <i className="fas fa-bars"></i>
                     </button>
                 </div>
             </header>
-
         </div>
     )
 }

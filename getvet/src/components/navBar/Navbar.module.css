@@ -1,111 +1,110 @@
 /* Header */
 .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    z-index: 990;
-    box-shadow: var(--shadow-sm);
-  }
-  
-  .headerContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem var(--container-padding);
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--dark-color);
-    text-decoration: none;
-  }
-  
-  .logo i {
-    color: var(--primary-color);
-    font-size: 1.5rem;
-  }
-  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  z-index: 990;
+  box-shadow: var(--shadow-sm);
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem var(--container-padding);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+.logo i {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+}
+
+.desktopNav {
+  display: none;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
   .desktopNav {
-    display: none;
-    align-items: center;
-    gap: 1.5rem;
-  }
-  
-  @media (min-width: 1024px) {
-    .desktopNav {
       display: flex;
-    }
   }
-  
-  .desktopNav a {
-    text-decoration: none;
-    color: var(--dark-color);
-    font-weight: 500;
-    transition: var(--transition);
-    position: relative;
-  }
-  
-  .desktopNav a:hover {
-    color: var(--primary-color);
-  }
-  
-  .desktopNav a.loginBtn {
-    color: var(--gray-color);
-  }
-  
-  .desktopNav a.joinBtn {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 0.5rem 1.25rem;
-    border-radius: var(--border-radius-sm);
-    font-weight: 600;
-  }
-  
-  .desktopNav a.joinBtn:hover {
-    background-color: var(--primary-dark);
-    color: white;
-  }
-  
-  .languageSelector select {
-    padding: 0.5rem;
-    border-radius: var(--border-radius-sm);
-    border: 1px solid var(--gray-light);
-    background-color: white;
-    font-family: 'Inter', sans-serif;
-    font-size: 0.875rem;
-    cursor: pointer;
-  }
-  
+}
+
+.desktopNav a {
+  text-decoration: none;
+  color: var(--dark-color);
+  font-weight: 500;
+  transition: var(--transition);
+  position: relative;
+}
+
+.desktopNav a:hover {
+  color: var(--primary-color);
+}
+
+.loginBtn {
+  color: var(--gray-color);
+}
+
+.joinBtn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--border-radius-sm);
+  font-weight: 600;
+}
+
+.joinBtn:hover {
+  background-color: var(--primary-dark);
+  color: white;
+}
+
+.languageSelector select {
+  padding: 0.5rem;
+  border-radius: var(--border-radius-sm);
+  border: 1px solid var(--gray-light);
+  background-color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.mobileMenuBtn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--dark-color);
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-sm);
+  transition: var(--transition);
+}
+
+@media (min-width: 1024px) {
   .mobileMenuBtn {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color: var(--dark-color);
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: var(--border-radius-sm);
-    transition: var(--transition);
-  }
-  
-  @media (min-width: 1024px) {
-    .mobileMenuBtn {
       display: none;
-    }
   }
-  
-  .mobileMenuBtn:hover {
-    background-color: var(--gray-light);
-  }
-  
+}
+
+.mobileMenuBtn:hover {
+  background-color: var(--gray-light);
+}
