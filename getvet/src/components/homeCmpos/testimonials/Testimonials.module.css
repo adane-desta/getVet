@@ -1,122 +1,18 @@
-/* Testimonials */
 .testimonials {
-    padding: 4rem var(--container-padding);
-    background-color: white;
-  }
-  
-  .testimonialsContainer {
-    max-width: 1200px;
-    margin: 0 auto 3rem;
-  }
-  
-  .testimonialCard {
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .testimonialContent {
-    background-color: white;
-    border-radius: var(--border-radius);
-    padding: 1.5rem;
-    box-shadow: var(--shadow);
-    border: 1px solid var(--gray-light);
-    height: 100%;
-  }
-  
-  .quoteIcon {
-    color: var(--primary-light);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .testimonialText {
-    font-style: italic;
-    color: var(--dark-color);
-    margin-bottom: 1.5rem;
-    line-height: 1.7;
-  }
-  
-  .testimonialAuthor {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
-  
-  .testimonialAuthor img {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    object-fit: cover;
-  }
-  
-  .authorInfo h4 {
-    font-size: 1rem;
-    margin-bottom: 0.25rem;
-  }
-  
-  .authorInfo p {
-    font-size: 0.875rem;
-    color: var(--gray-color);
-    margin-bottom: 0.25rem;
-  }
-  
-  .rating {
-    color: var(--accent-color);
-    font-size: 0.875rem;
-  }
-  
-  .swiperPagination {
-    position: relative;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-  }
-  
-  .swiperPaginationBullet {
-    width: 10px;
-    height: 10px;
-    background-color: var(--gray-light);
-    opacity: 1;
-    border-radius: 50%;
-    display: inline-block;
-    cursor: pointer;
-    transition: var(--transition);
-  }
-  
-  .swiperPaginationBullet.active {
-    background-color: var(--primary-color);
-    transform: scale(1.2);
-  }
-  
-  .testimonialStats {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    flex-wrap: wrap;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  
-  .statBox {
-    text-align: center;
-    padding: 1.5rem;
-    background-color: #f8fafc;
-    border-radius: var(--border-radius);
-    min-width: 120px;
-  }
-  
-  .statValue {
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--primary-color);
-    line-height: 1;
-    margin-bottom: 0.5rem;
-  }
-  
-  .statLabel {
-    font-size: 0.875rem;
-    color: var(--gray-color);
-  }
+  padding: 6rem 2rem;
+  background: #f9fafb;
+}
+
+.testimonialCard {
+  background: white;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+}
+
+.testimonialText {
+  font-style: italic;
+}
+
+.authorInfo h4 {
+  margin-top: 1rem;
+}
