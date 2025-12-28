@@ -6,6 +6,7 @@ function Features() {
 
         {
             title: "For Farmers",
+            icon: "fas fa-tractor",
             description: "Expert advice to keep your livestock healthy, productive and profitable.",
             items: [
                  "Disease Prevention",
@@ -16,6 +17,7 @@ function Features() {
         },
         {
             title: "For Veterinarians",
+            icon: "fas fa-user-md",
             description: "Expand your practice with digital consultations and professional networking.",
             items: [
                 "Digital Consultations",
@@ -26,6 +28,7 @@ function Features() {
         },
         {
             title: "Smart Appointments",
+            icon: "fas fa-calendar-check",
             description: "Schedule, manage and track appointments with our intelligent booking system.",
             items: [
                  "Online Booking",
@@ -35,27 +38,8 @@ function Features() {
            
         },
         {
-            title: "For Farmers",
-            description: "Expert advice to keep your livestock healthy, productive and profitable.",
-            items: [
-                "Disease Prevention",
-                "Nutrition Guidance",
-                "Emergency Support",
-            ]
-     
-        },
-        {
-            title: "For Farmers",
-            description: "Expert advice to keep your livestock healthy, productive and profitable.",
-            items: [
-                "Disease Prevention",
-                "Nutrition Guidance",
-                "Emergency Support",   
-            ]
-     
-        },
-        {
           title: "Health Resources",
+          icon:"fas fa-book-medical",
           description: "Access articles, guides and treatment protocols for common animal conditions.",
           items: [
             "Treatment Guides",
@@ -65,6 +49,7 @@ function Features() {
         },
         {
           title: "Disease Alerts",
+          icon: "fas fa-bell",
           description: "Get notified about disease outbreaks in your region with preventive recommendations.",
           items: [
             "Outbreak Alerts",
@@ -74,6 +59,7 @@ function Features() {
         },
         {
           title: "Expert Q&A",
+          icon: "fas fa-comments",
           description: "Ask questions and get answers from veterinary experts within hours.",
           items: [
             "Quick Responses",
@@ -100,7 +86,7 @@ function Features() {
             {features.map((feature , index) => (
                 <div key={index} className={styles.featureCard}>
                     <div className={styles.featureIcon}>
-                    <i className="fas fa-tractor"></i>
+                    <i className={feature.icon}></i>
                     </div>
                     <h3>{feature.title}</h3>
                     <p>
