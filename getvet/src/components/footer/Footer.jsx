@@ -1,17 +1,14 @@
-
 import style from './Footer.module.css'
+
 function Footer() {
-
     return (
-
         <div>
-
             {/* Footer */}
             <footer className={style.footer}>
                 <div className={style.footerContainer}>
                     <div className={style.footerSection}>
                         <div className={style.footerLogo}>
-                         <i className={`${style.fas} ${style.faHeartbeat}`}></i>
+                            <i className="fas fa-heartbeat"></i>
                             <span>AnimalHealth</span>
                         </div>
                         <p className={style.footerDescription}>
@@ -19,10 +16,10 @@ function Footer() {
                             sustainable agriculture.
                         </p>
                         <div className={style.footerSocial}>
-                            <a href="#"><i className={`${fab} ${fa-facebook}`}></i></a>
-                            <a href="#"><i className={`${fab} ${fa-twitter}`}></i></a>
-                            <a href="#"><i className={`${fab} ${fa-instagram}`}></i></a>
-                            <a href="#"><i className={`${fab} ${fa-telegram}`}></i></a>
+                            <a href="#"><i className="fab fa-facebook"></i></a>
+                            <a href="#"><i className="fab fa-twitter"></i></a>
+                            <a href="#"><i className="fab fa-instagram"></i></a>
+                            <a href="#"><i className="fab fa-telegram"></i></a>
                         </div>
                     </div>
 
@@ -51,9 +48,9 @@ function Footer() {
                     <div className={style.footerSection}>
                         <h4>Contact</h4>
                         <ul className={style.footerContact}>
-                            <li><i className={`${fas} ${fa-phone}`}></i> +251 911 234 567</li>
-                            <li><i className={`${fas} ${fa-envelope}`}></i> support@animalhealth.et</li>
-                            <li><i className={`${fas} ${fa-map-marker-alt}`}></i> Addis Ababa, Ethiopia</li>
+                            <li><i className="fas fa-phone"></i> +251 911 234 567</li>
+                            <li><i className="fas fa-envelope"></i> support@animalhealth.et</li>
+                            <li><i className="fas fa-map-marker-alt"></i> Addis Ababa, Ethiopia</li>
                         </ul>
                     </div>
                 </div>
@@ -67,8 +64,6 @@ function Footer() {
                     </div>
                 </div>
             </footer>
-
-
         </div>
     )
 }
