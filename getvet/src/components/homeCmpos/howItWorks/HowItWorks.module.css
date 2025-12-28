@@ -1,70 +1,91 @@
+/* How It Works */
 .howItWorks {
-  padding: 6rem 2rem;
-  background: #f9fafb;
+  padding: 4rem var(--container-padding);
+  background-color: white;
 }
 
 .sectionHeader {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .sectionTitle {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.highlight {
-  color: var(--primary-color);
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--dark-color);
 }
 
 .sectionSubtitle {
-  color: #666;
-  margin-top: 0.5rem;
+  color: var(--gray-color);
+  font-size: 1.125rem;
 }
 
 .stepsContainer {
   position: relative;
-  max-width: 900px;
-  margin: 0 auto 4rem;
+  max-width: 600px;
+  margin: 0 auto 3rem;
 }
 
 .stepLine {
   position: absolute;
-  top: 50px;
-  left: 50%;
+  left: 2rem;
+  top: 0;
+  bottom: 0;
   width: 2px;
-  height: calc(100% - 100px);
-  background: var(--primary-color);
-  transform: translateX(-50%);
+  background-color: var(--gray-light);
+  z-index: 1;
 }
 
 .step {
-  display: flex;
-  align-items: center;
-  margin-bottom: 4rem;
   position: relative;
-}
-
-.stepNumber {
-  font-size: 4rem;
-  font-weight: 700;
-  color: rgba(0, 0, 0, 0.05);
-  position: absolute;
-  left: -20px;
-}
-
-.stepIcon {
-  background: white;
-  border-radius: 50%;
-  padding: 1.5rem;
-  margin-right: 2rem;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
   z-index: 2;
 }
 
-.stepContent h3 {
+.stepNumber {
+  position: absolute;
+  left: 1.5rem;
+  top: 0.5rem;
+  transform: translateX(-50%);
+  background-color: white;
+  color: var(--gray-color);
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 0.25rem;
+  z-index: 3;
+}
+
+.stepIcon {
+  width: 4rem;
+  height: 4rem;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+  box-shadow: var(--shadow-lg);
+  border: 2px solid var(--primary-light);
+  color: var(--primary-color);
   font-size: 1.5rem;
+  flex-shrink: 0;
+  z-index: 3;
+}
+
+.stepContent {
+  flex: 1;
+  padding-top: 0.5rem;
+}
+
+.stepContent h3 {
+  font-size: 1.25rem;
   margin-bottom: 0.5rem;
+}
+
+.stepContent p {
+  color: var(--gray-color);
 }
 
 .demoVideo {
@@ -74,13 +95,51 @@
 .videoThumbnail {
   display: inline-block;
   position: relative;
-  padding: 3rem 5rem;
-  background: white;
-  border-radius: var(--border-radius);
   cursor: pointer;
 }
 
+.videoThumbnail::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  border-radius: var(--border-radius);
+}
+
+.videoThumbnail img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: var(--border-radius);
+  display: block;
+}
+
 .playButton {
-  font-size: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4rem;
+  height: 4rem;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: var(--primary-color);
+  font-size: 1.5rem;
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition);
+}
+
+.videoThumbnail:hover .playButton {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.videoThumbnail p {
+  margin-top: 1rem;
+  font-weight: 600;
+  color: var(--gray-color);
 }
