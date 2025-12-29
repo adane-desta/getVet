@@ -1,94 +1,89 @@
-/* Features Section */
+/* Features */
 .features {
-  padding: 6rem 2rem;
-  background-color: white;
-}
-
-.sectionHeader {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 4rem;
-}
-
-.sectionTitle {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--dark-color);
-  margin-bottom: 1rem;
-}
-
-.sectionSubtitle {
-  color: var(--gray-color);
-  font-size: 1.1rem;
+  padding: 4rem var(--container-padding);
+  background-color: #f8fafc;
 }
 
 .featuresGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
 }
 
 .featureCard {
-  background: white;
+  background-color: white;
   border-radius: var(--border-radius);
-  padding: 2rem;
-  box-shadow: var(--box-shadow);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
   transition: var(--transition);
-  border: 1px solid #f0f0f0;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
+  border: 1px solid transparent;
 }
 
 .featureCard:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
   border-color: var(--primary-light);
 }
 
 .featureIcon {
-  width: 70px;
-  height: 70px;
-  background: linear-gradient(135deg, var(--primary-light), var(--primary-color));
-  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+  border-radius: var(--border-radius);
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1.5rem;
-  color: white;
-  font-size: 1.8rem;
-}
-
-.featureTitle {
-  font-size: 1.5rem;
-  font-weight: 600;
   margin-bottom: 1rem;
-  color: var(--dark-color);
+  color: white;
+  font-size: 1.25rem;
 }
 
-.featureDesc {
+.featureCard h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.featureCard p {
   color: var(--gray-color);
-  margin-bottom: 1.5rem;
-  flex-grow: 1;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
 }
 
-.featureHighlights {
+.featureList {
+  list-style: none;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.featureHighlights span {
+.featureList li {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   font-size: 0.9rem;
-  color: var(--primary-dark);
 }
 
-.featureHighlights i {
+.featureList i {
   color: var(--success-color);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--dark-color);
+}
+
+.sectionSubtitle {
+  color: var(--gray-color);
+  font-size: 1.125rem;
+}
+.highlight {
+  color: var(--primary-color);
 }

@@ -2,7 +2,7 @@ import styles from './Navbar.module.css';
 
 function Navbar() {
     return (
-        <div>
+        <div className='container'>
             {/* Header */}
             <header className={styles.header}>
                 <div className={styles.headerContainer}>

@@ -2,7 +2,7 @@ import styles from './HowItWorks.module.css';
 
 function HowItWorks() {
     return (
-        <div>
+        <div className='container'>
             {/* How It Works */}
             <section className={styles.howItWorks} id="how-it-works">
                 <div className={styles.sectionHeader}>
