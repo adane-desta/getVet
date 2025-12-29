@@ -2,6 +2,7 @@ import styles from './Features.module.css';
 
 function Features() {
   return (
+    
     <div className='container'>
     <section className={styles.features} id="features">
       <div className={styles.sectionHeader}>
