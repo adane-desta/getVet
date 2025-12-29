@@ -5,60 +5,62 @@
 @import url('https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css');
 
 :root {
-    --primary-color: #2E7D32;
-    --primary-light: #4CAF50;
-    --primary-dark: #1B5E20;
-    --secondary-color: #FF9800;
-    --secondary-light: #FFB74D;
-    --accent-color: #2196F3;
-    --light-color: #F5F9F6;
-    --dark-color: #263238;
-    --gray-color: #78909C;
-    --success-color: #4CAF50;
-    --warning-color: #FF9800;
-    --danger-color: #F44336;
-    --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-    
-    --border-radius: 16px;
-    --border-radius-sm: 8px;
-    --border-radius-lg: 24px;
-  
-    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
-    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.12);
-    --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
-  
-    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    --container-padding: 1.5rem;
-  }
-  
+  --primary-color: #10B981;
+  --primary-dark: #059669;
+  --primary-light: #34D399;
+  --secondary-color: #8B5CF6;
+  --accent-color: #F59E0B;
+  --dark-color: #1F2937;
+  --light-color: #F9FAFB;
+  --gray-color: #6B7280;
+  --gray-light: #E5E7EB;
+  --danger-color: #EF4444;
+  --success-color: #10B981;
+  --warning-color: #F59E0B;
+
+  --border-radius: 16px;
+  --border-radius-sm: 8px;
+  --border-radius-lg: 24px;
+
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 10px 40px rgba(0, 0, 0, 0.12);
+  --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
+
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --container-padding: 1.5rem;
+}
+
   /* Reset & Base Styles */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-    font-size: 16px;
-  }
-  
-  body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-    color: var(--dark-color);
-    background-color: var(--light-color);
-    line-height: 1.6;
-    overflow-x: hidden;
-    min-height: 100vh;
-  }
-  
-  h1, h2, h3, h4 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 700;
-    line-height: 1.2;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
   
   /* Global Animation Classes */
   @keyframes fadeInUp {
@@ -94,7 +96,11 @@
       transform: translateY(-5px) translateX(-50%);
     }
   }
-
+  .container {
+      max-width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+  }
 .highlight {
     color: var(--primary-color);
 }

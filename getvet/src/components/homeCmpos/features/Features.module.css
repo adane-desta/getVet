@@ -1,26 +1,7 @@
-/* Features Section */
+/* Features */
 .features {
   padding: 4rem var(--container-padding);
   background-color: #f8fafc;
-}
-
-.sectionHeader {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto 4rem;
-}
-
-.sectionTitle {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--dark-color);
-  margin-bottom: 1rem;
-}
-
-.sectionSubtitle {
-  color: var(--gray-color);
-  font-size: 1.1rem;
 }
 
 .featuresGrid {
@@ -39,6 +20,7 @@
   transition: var(--transition);
   border: 1px solid transparent;
 }
+
 .featureCard:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
@@ -58,49 +40,50 @@
   font-size: 1.25rem;
 }
 
-.featureTitle {
+.featureCard h3 {
   font-size: 1.25rem;
   margin-bottom: 0.75rem;
 }
 
-.featureDesc {
+.featureCard p {
   color: var(--gray-color);
   margin-bottom: 1rem;
   font-size: 0.95rem;
 }
 
-.highlight {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.highlight span {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
-  color: var(--primary-dark);
-}
-
-.highlight i {
-  color: var(--success-color);
-}
-
-.featurelist {
+.featureList {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.featurelist li {
+.featureList li {
   display: flex;
   align-items: center;
   gap: 0.5rem;
   font-size: 0.9rem;
 }
 
-.featurelist i {
+.featureList i {
   color: var(--success-color);
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--dark-color);
+}
+
+.sectionSubtitle {
+  color: var(--gray-color);
+  font-size: 1.125rem;
+}
+.highlight {
+  color: var(--primary-color);
 }

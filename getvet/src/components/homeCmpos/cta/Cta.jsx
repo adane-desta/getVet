@@ -2,7 +2,7 @@ import styles from './Cta.module.css';
 
 function Cta() {
   return (
-    <div>
+    <div className='container'>
       {/* CTA Section */}
       <section className={styles.ctaSection}>
         <div className={styles.ctaContainer}>
