@@ -94,3 +94,7 @@
       transform: translateY(-5px) translateX(-50%);
     }
   }
+
+.highlight {
+    color: var(--primary-color);
+}
