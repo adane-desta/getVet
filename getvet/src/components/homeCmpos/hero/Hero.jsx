@@ -2,7 +2,7 @@ import styles from './Hero.module.css';
 
 function Hero() {
     return (
-        <div className='container'>
+        <div>
             {/* Hero Section */}
             <section className={styles.hero}>
                 <div className={styles.heroOverlay}></div>

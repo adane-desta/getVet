@@ -2,7 +2,7 @@ import styles from './Testimonials.module.css';
 
 function Testimonials() {
     return (
-        <div className='container'>
+        <div>
             {/* Testimonials */}
             <section className={styles.testimonials} id="testimonials">
                 <div className={styles.sectionHeader}>
