@@ -1,5 +1,6 @@
-import Home from "./pages/homePage/Home";
+
 import './styles/global.css'
+import Home from "./pages/homePage/Home";
 function App(){
     return(
         <div>
