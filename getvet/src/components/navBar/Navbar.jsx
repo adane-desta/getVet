@@ -1,6 +1,7 @@
 import styles from './Navbar.module.css';
 
-function Navbar() {
+function Navbar({toggleMenu}) {
+
     return (
         <div>
             {/* Header */}
@@ -31,7 +32,7 @@ function Navbar() {
                         </div>
                     </nav>
 
-                    <button className={styles.mobileMenuBtn}>
+                    <button className={styles.mobileMenuBtn} onClick={toggleMenu}>
                         <i className="fas fa-bars"></i>
                     </button>
                 </div>
