@@ -1,74 +1,76 @@
 /* Features */
 .features {
-  padding: 4rem var(--container-padding);
-  background-color: #f8fafc;
+    padding: 4rem var(--container-padding);
+    background-color: #f8fafc;
 }
 
 .featuresGrid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1.5rem;
-  max-width: 1200px;
-  margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .featureCard {
-  background-color: white;
-  border-radius: var(--border-radius);
-  padding: 1.5rem;
-  box-shadow: var(--shadow);
-  transition: var(--transition);
-  border: 1px solid transparent;
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    border: 1px solid transparent;
 }
 
 .featureCard:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-lg);
-  border-color: var(--primary-light);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-light);
 }
 
 .featureIcon {
-  width: 3rem;
-  height: 3rem;
-  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
-  border-radius: var(--border-radius);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 1rem;
-  color: white;
-  font-size: 1.25rem;
+    width: 3rem;
+    height: 3rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+    border-radius: var(--border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 1.25rem;
 }
 
 .featureCard h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
 }
 
 .featureCard p {
-  color: var(--gray-color);
-  margin-bottom: 1rem;
-  font-size: 0.95rem;
+    color: var(--gray-color);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
 }
 
 .featureList {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: rgb(104, 100, 100);
+    padding: 0;
+    margin: 0;
 }
 
 .featureList li {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
 }
 
-.featureList i {
-  color: var(--success-color);
+.featureList svg {
+    color: var(--success-color);
 }
-
 .sectionHeader {
   text-align: center;
   margin-bottom: 3rem;
@@ -86,4 +88,19 @@
 }
 .highlight {
   color: var(--primary-color);
+}
+
+
+/* Tablet Styles */
+@media (min-width: 768px) {
+    .featuresGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 1024px) {
+    .featuresGrid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }

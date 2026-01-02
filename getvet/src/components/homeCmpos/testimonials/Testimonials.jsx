@@ -1,4 +1,8 @@
 import styles from './Testimonials.module.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 function Testimonials() {
     return (
@@ -17,6 +21,15 @@ function Testimonials() {
                 <div className={styles.testimonialsContainer}>
                     <div className={`swiper ${styles.testimonialsSwiper}`}>
                         <div className="swiper-wrapper">
+                            <Swiper modules={[Autoplay, Pagination]}
+                                autoplay={{ delay: 5000 }}
+                                pagination={{ clickable: true }}
+                                breakpoints={{
+                                768: { slidesPerView: 2 },
+                                1024: { slidesPerView: 3 }
+                                }}
+                                spaceBetween={20}>
+                            <SwiperSlide>
                             <div className={`swiper-slide ${styles.testimonialCard}`}>
                                 <div className={styles.testimonialContent}>
                                     <div className={styles.quoteIcon}>
@@ -48,7 +61,9 @@ function Testimonials() {
                                     </div>
                                 </div>
                             </div>
+                            </SwiperSlide>
 
+                            <SwiperSlide>
                             <div className={`swiper-slide ${styles.testimonialCard}`}>
                                 <div className={styles.testimonialContent}>
                                     <div className={styles.quoteIcon}>
@@ -80,7 +95,9 @@ function Testimonials() {
                                     </div>
                                 </div>
                             </div>
+                            </SwiperSlide>
 
+                            <SwiperSlide>
                             <div className={`swiper-slide ${styles.testimonialCard}`}>
                                 <div className={styles.testimonialContent}>
                                     <div className={styles.quoteIcon}>
@@ -112,6 +129,8 @@ function Testimonials() {
                                     </div>
                                 </div>
                             </div>
+                            </SwiperSlide>
+                            </Swiper>
                         </div>
 
                         <div className="swiper-pagination"></div>
