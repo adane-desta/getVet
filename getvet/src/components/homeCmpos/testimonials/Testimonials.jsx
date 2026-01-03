@@ -20,8 +20,8 @@ function Testimonials() {
 
                 <div className={styles.testimonialsContainer}>
                     <div className={`swiper ${styles.testimonialsSwiper}`}>
-                        <div className="swiper-wrapper">
-                            <Swiper modules={[Autoplay, Pagination]}
+                        <Swiper className="swiper-wrapper"
+                             modules={[Autoplay, Pagination]}
                                 autoplay={{ delay: 5000 }}
                                 pagination={{ clickable: true }}
                                 breakpoints={{
@@ -130,8 +130,8 @@ function Testimonials() {
                                 </div>
                             </div>
                             </SwiperSlide>
-                            </Swiper>
-                        </div>
+                            
+                        </Swiper>
 
                         <div className="swiper-pagination"></div>
                     </div>
