@@ -1,6 +1,5 @@
-/* CTA Section */
 .ctaSection {
-  background: linear-gradient(135deg, var(--primary-dark), var(--primary-color));
+  background: linear-gradient(135deg, var(--primary-dark2), var(--primary-color2));
   color: white;
   padding: 5rem 2rem;
 }
@@ -37,6 +36,18 @@
 .btnCtaPrimary {
   background: white;
   color: var(--primary-color);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600 !important;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 1rem !important;
+  gap: 0.5rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btnCtaPrimary:hover {
@@ -48,7 +59,18 @@
 .btnCtaSecondary {
   background: transparent;
   color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600 !important;
   border: 2px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 1rem !important;
+  gap: 0.5rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btnCtaSecondary:hover {
@@ -84,4 +106,20 @@
 
 .ctaImage:hover img {
   transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+
+  .ctaButtons {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .btnCtaPrimary,
+  .btnCtaSecondary {
+      width: 100%;
+      justify-content: center;
+  }
+
 }

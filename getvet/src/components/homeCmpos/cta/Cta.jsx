@@ -1,48 +1,49 @@
-import styles from './Cta.module.css';
+import React from "react";
+import styles from "./CTA.module.css";
 
-function Cta() {
+const CTA = () => {
   return (
-    <div>
-      {/* CTA Section */}
-      <section className={styles.ctaSection}>
-        <div className={styles.ctaContainer}>
-          <div className={styles.ctaContent}>
-            <h2>Start Your Journey to Better Animal Health</h2>
-            <p>
-              Join thousands of farmers and veterinarians who trust our platform for
-              animal care
-            </p>
+    <section className={styles.ctaSection}>
+      <div className={styles.ctaContainer}>
+        {/* Left Content */}
+        <div className={styles.ctaContent}>
+          <h2>Start Your Journey to Better Animal Health</h2>
+          <p>
+          Join thousands of farmers and veterinarians who trust our platform for animal care
+          </p>
 
-            <div className={styles.ctaButtons}>
-              <a href="/join-us.html" className={styles.btnCtaPrimary}>
-                <i className="fas fa-user-plus"></i> Create Free Account
-              </a>
-
-              <a
-                href="/frontEnd/html-files/loginpage.html"
-                className={styles.btnCtaSecondary}
-              >
-                <i className="fas fa-sign-in-alt"></i> Existing User Login
-              </a>
-            </div>
-
-            <div className={styles.ctaBenefits}>
-              <p><i className="fas fa-check"></i> No credit card required</p>
-              <p><i className="fas fa-check"></i> Free for individual farmers</p>
-              <p><i className="fas fa-check"></i> 30-day premium trial for vets</p>
-            </div>
+          <div className={styles.ctaButtons}>
+          <a className={styles.btnCtaPrimary}>
+              <i className="fas fa-user-plus"></i> Create Free Account
+          </a>
+          <a class={styles.btnCtaSecondary}>
+              <i class="fas fa-sign-in-alt"></i> Existing User Login
+            </a>
           </div>
 
-          <div className={styles.ctaImage}>
-            <img
-              src="https://images.unsplash.com/photo-1593069567131-53a0614dde1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
-              alt="Veterinary Care"
-            />
+          <div className={styles.ctaBenefits}>
+            <p>
+              <i className="fas fa-check"></i> Easy to use and intuitive
+            </p>
+            <p>
+              <i className="fas fa-check"></i> Secure and reliable
+            </p>
+            <p>
+              <i className="fas fa-check"></i> 24/7 support available
+            </p>
           </div>
         </div>
-      </section>
-    </div>
-  );
-}
 
-export default Cta;
+        {/* Right Image */}
+        <div className={styles.ctaImage}>
+          <img
+            src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80"
+            alt="CTA Illustration"
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default CTA;
