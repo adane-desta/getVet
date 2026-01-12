@@ -21,116 +21,49 @@ function Testimonials() {
                 <div className={styles.testimonialsContainer}>
                     <div className={`swiper ${styles.testimonialsSwiper}`}>
                         <Swiper className="swiper-wrapper"
-                             modules={[Autoplay, Pagination]}
-                                autoplay={{ delay: 5000 }}
-                                pagination={{ clickable: true }}
-                                breakpoints={{
+                            modules={[Autoplay, Pagination]}
+                            autoplay={{ delay: 5000 }}
+                            pagination={{ clickable: true }}
+                            breakpoints={{
                                 768: { slidesPerView: 2 },
                                 1024: { slidesPerView: 3 }
-                                }}
-                                spaceBetween={20}>
+                            }}
+                            spaceBetween={20}>
+
                             <SwiperSlide>
-                            <div className={`swiper-slide ${styles.testimonialCard}`}>
-                                <div className={styles.testimonialContent}>
-                                    <div className={styles.quoteIcon}>
-                                        <i className="fas fa-quote-left"></i>
-                                    </div>
+                                <div className={`swiper-slide ${styles.testimonialCard}`}>
+                                    <div className={styles.testimonialContent}>
+                                        <div className={styles.quoteIcon}>
+                                            <i className="fas fa-quote-left"></i>
+                                        </div>
 
-                                    <p className={styles.testimonialText}>
-                                        This platform transformed how I manage my cattle farm. I used to
-                                        lose 2–3 calves every season to disease, but with the expert advice
-                                        I receive here, I haven&apos;t lost a single one in the past year.
-                                    </p>
+                                        <p className={styles.testimonialText}>
+                                            This platform transformed how I manage my cattle farm. I used to
+                                            lose 2–3 calves every season to disease, but with the expert advice
+                                            I receive here, I haven&apos;t lost a single one in the past year.
+                                        </p>
 
-                                    <div className={styles.testimonialAuthor}>
-                                        <img
-                                            src="https://randomuser.me/api/portraits/men/32.jpg"
-                                            alt="User"
-                                        />
-                                        <div className={styles.authorInfo}>
-                                            <h4>Kebede Mulugeta</h4>
-                                            <p>Dairy Farmer, Oromia</p>
-                                            <div className={styles.rating}>
-                                                <i className="fas fa-star"></i>
-                                                <i className="fas fa-star"></i>
-                                                <i className="fas fa-star"></i>
-                                                <i className="fas fa-star"></i>
-                                                <i className="fas fa-star"></i>
+                                        <div className={styles.testimonialAuthor}>
+                                            <img
+                                                src="https://randomuser.me/api/portraits/men/32.jpg"
+                                                alt="User"
+                                            />
+                                            <div className={styles.authorInfo}>
+                                                <h4>Kebede Mulugeta</h4>
+                                                <p>Dairy Farmer, Oromia</p>
+                                                <div className={styles.rating}>
+                                                    <i className="fas fa-star"></i>
+                                                    <i className="fas fa-star"></i>
+                                                    <i className="fas fa-star"></i>
+                                                    <i className="fas fa-star"></i>
+                                                    <i className="fas fa-star"></i>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
                             </SwiperSlide>
 
-                            <SwiperSlide>
-                            <div className={`swiper-slide ${styles.testimonialCard}`}>
-                                <div className={styles.testimonialContent}>
-                                    <div className={styles.quoteIcon}>
-                                        <i className="fas fa-quote-left"></i>
-                                    </div>
-
-                                    <p className={styles.testimonialText}>
-                                        As a veterinarian in a remote area, this platform helps me reach
-                                        more farmers and provide timely advice. The appointment system has
-                                        doubled my client base while reducing travel time.
-                                    </p>
-
-                                    <div className={styles.testimonialAuthor}>
-                                        <img
-                                            src="https://randomuser.me/api/portraits/women/44.jpg"
-                                            alt="User"
-                                        />
-                                        <div className={styles.authorInfo}>
-                                            <h4>Dr. Selamawit Tesfaye</h4>
-                                            <p>Veterinarian, Amhara</p>
-                                            <div className={styles.rating}>
-                                                <i className="fas fa-star"></i>
-                                                <i className="fas fa-star"></i>
-                                                <i className="fas fa-star"></i>
-                                                <i className="fas fa-star"></i>
-                                                <i className="fas fa-star-half-alt"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </SwiperSlide>
-
-                            <SwiperSlide>
-                            <div className={`swiper-slide ${styles.testimonialCard}`}>
-                                <div className={styles.testimonialContent}>
-                                    <div className={styles.quoteIcon}>
-                                        <i className="fas fa-quote-left"></i>
-                                    </div>
-
-                                    <p className={styles.testimonialText}>
-                                        The disease alerts saved my entire poultry farm during the recent
-                                        outbreak. I received preventive measures before the disease
-                                        reached my area. This service is invaluable!
-                                    </p>
-
-                                    <div className={styles.testimonialAuthor}>
-                                        <img
-                                            src="https://randomuser.me/api/portraits/men/65.jpg"
-                                            alt="User"
-                                        />
-                                        <div className={styles.authorInfo}>
-                                            <h4>Asrat Wolde</h4>
-                                            <p>Poultry Farmer, SNNPR</p>
-                                            <div className={styles.rating}>
-                                                <i className="fas fa-star"></i>
-                                                <i className="fas fa-star"></i>
-                                                <i className="fas fa-star"></i>
-                                                <i className="fas fa-star"></i>
-                                                <i className="fas fa-star"></i>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </SwiperSlide>
-                            
                         </Swiper>
 
                         <div className="swiper-pagination"></div>
