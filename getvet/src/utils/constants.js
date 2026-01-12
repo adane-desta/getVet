@@ -62,3 +62,33 @@ export const features = [
       ]
     }
   ];
+
+  export const testimonials = [
+    {
+      text: "This platform transformed how I manage my cattle farm. I used to lose 2–3 calves every season to disease, but with the expert advice I receive here, I haven't lost a single one in the past year.",
+      author: "Kebede Mulugeta",
+      role: "Dairy Farmer, Oromia",
+      image: "https://randomuser.me/api/portraits/men/32.jpg",
+      rating: 5
+    },
+    {
+      text: "As a veterinarian in a remote area, this platform helps me reach more farmers and provide timely advice. The appointment system has doubled my client base while reducing travel time.",
+      author: "Dr. Selamawit Tesfaye",
+      role: "Veterinarian, Amhara",
+      image: "https://randomuser.me/api/portraits/women/44.jpg",
+      rating: 4.5
+    },
+    {
+      text: "The disease alerts saved my entire poultry farm during the recent outbreak. I received preventive measures before the disease reached my area. This service is invaluable!",
+      author: "Asrat Wolde",
+      role: "Poultry Farmer, SNNPR",
+      image: "https://randomuser.me/api/portraits/men/65.jpg",
+      rating: 5
+    }
+  ];
+  
+  const testimonialStats = [
+    { value: "4.8/5", label: "Average Rating" },
+    { value: "98%", label: "Would Recommend" },
+    { value: "24h", label: "Avg. Response Time" }
+  ];
