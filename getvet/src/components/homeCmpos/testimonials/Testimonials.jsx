@@ -1,4 +1,5 @@
 import styles from './Testimonials.module.css';
+import { testimonials } from '../../../utils/constants';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
@@ -29,40 +30,33 @@ function Testimonials() {
                                 1024: { slidesPerView: 3 }
                             }}
                             spaceBetween={20}>
-
-                            <SwiperSlide>
-                                <div className={`swiper-slide ${styles.testimonialCard}`}>
-                                    <div className={styles.testimonialContent}>
-                                        <div className={styles.quoteIcon}>
-                                            <i className="fas fa-quote-left"></i>
-                                        </div>
-
-                                        <p className={styles.testimonialText}>
-                                            This platform transformed how I manage my cattle farm. I used to
-                                            lose 2–3 calves every season to disease, but with the expert advice
-                                            I receive here, I haven&apos;t lost a single one in the past year.
-                                        </p>
-
-                                        <div className={styles.testimonialAuthor}>
-                                            <img
-                                                src="https://randomuser.me/api/portraits/men/32.jpg"
-                                                alt="User"
-                                            />
-                                            <div className={styles.authorInfo}>
-                                                <h4>Kebede Mulugeta</h4>
-                                                <p>Dairy Farmer, Oromia</p>
-                                                <div className={styles.rating}>
-                                                    <i className="fas fa-star"></i>
-                                                    <i className="fas fa-star"></i>
-                                                    <i className="fas fa-star"></i>
-                                                    <i className="fas fa-star"></i>
-                                                    <i className="fas fa-star"></i>
+                            {testimonials.map((t, index) => (
+                                <SwiperSlide key={index}>
+                                    <div className={`swiper-slide ${styles.testimonialCard}`}>
+                                        <div className={styles.testimonialContent}>
+                                            <div className={styles.quoteIcon}>
+                                                <i className="fas fa-quote-left"></i>
+                                            </div>
+                                            <p className={styles.testimonialText}>{t.text}</p>
+                                            <div className={styles.testimonialAuthor}>
+                                                <img src={t.image} alt={t.author} />
+                                                <div className={styles.authorInfo}>
+                                                    <h4>{t.author}</h4>
+                                                    <p>{t.role}</p>
+                                                    <div className={styles.rating}>
+                                                        {Array.from({ length: Math.floor(t.rating) }).map((_, i) => (
+                                                            <i key={i} className="fas fa-star"></i>
+                                                        ))}
+                                                        {t.rating % 1 !== 0 && <i className="fas fa-star-half-alt"></i>}
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </SwiperSlide>
+                                </SwiperSlide>
+                            ))}
+
+
 
                         </Swiper>
 
