@@ -4,7 +4,7 @@ function HowItWorks() {
     return (
         <div>
             {/* How It Works */}
-            <section className={styles.howItWorks} id="how-it-works">
+            <section className={styles.howItWorks} id="howItWorks">
                 <div className={styles.sectionHeader}>
                     <h2 className={styles.sectionTitle}>
                         How It <span className={styles.highlight}>Works</span>
