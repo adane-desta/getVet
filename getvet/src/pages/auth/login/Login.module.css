@@ -1,0 +1,76 @@
+.loginContainer {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .languageSelector {
+    margin-bottom: 15px;
+  }
+  
+  .languageSelector select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .userType {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .userType label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
+  
+  #farmerRadio, #veterinarianRadio {
+    accent-color: #007bff;
+  }
+  
+  #loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  #loginForm input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  #loginBtn {
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #loginBtn:hover {
+    background: #0056b3;
+  }
+  
+  .signupLink {
+    margin-top: 15px;
+    text-align: center;
+  }
+  
+  .signupLink a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .signupLink a:hover {
+    text-decoration: underline;
+  }
