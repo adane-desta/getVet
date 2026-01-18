@@ -26,16 +26,16 @@ function MobileMenu({open , toggleMenu}) {
         </div>
 
         <div className={style.mobileNavLinks}>
-          <a href="#home" className={style.mobileNavLink}>
+          <a href="#hero" className={style.mobileNavLink} onClick={toggleMenu}>
             <i className="fas fa-home"></i> Home
           </a>
-          <a href="#features" className={style.mobileNavLink}>
+          <a href="#features" className={style.mobileNavLink} onClick={toggleMenu}>
             <i className="fas fa-star"></i> Features
           </a>
-          <a href="#howItWorks" className={style.mobileNavLink}>
+          <a href="#howItWorks" className={style.mobileNavLink} onClick={toggleMenu}>
             <i className="fas fa-cogs"></i> How It Works
           </a>
-          <a href="#testimonials" className={style.mobileNavLink}>
+          <a href="#testimonials" className={style.mobileNavLink} onClick={toggleMenu}>
             <i className="fas fa-comment-dots"></i> Testimonials
           </a>
           <a href="/frontEnd/html-files/loginpage.html" className={style.mobileNavLink}>

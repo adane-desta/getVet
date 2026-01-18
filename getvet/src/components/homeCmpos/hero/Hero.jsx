@@ -4,7 +4,7 @@ function Hero() {
     return (
         <div>
             {/* Hero Section */}
-            <section className={styles.hero}>
+            <section className={styles.hero} id='hero'>
                 <div className={styles.heroOverlay}></div>
 
                 <div className={styles.heroContent}>
