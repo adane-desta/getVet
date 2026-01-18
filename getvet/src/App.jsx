@@ -6,9 +6,7 @@ import RoleSelect from './pages/roleSelect/RoleSelect';
 function App(){
     return(
         <div>
-            {/* <Home /> */}
-            {/* <Login /> */}
-            <RoleSelect />
+            <Home />
         </div>
     )
 }
