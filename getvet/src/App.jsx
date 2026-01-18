@@ -1,12 +1,12 @@
 
 import './styles/global.css'
-import Home from "./pages/homePage/Home";
+import Signup from './pages/auth/signup/Signup';
 function App(){
     return(
+
         <div>
-            <Home />
+         <Signup /> 
         </div>
     )
 }
-
 export default App;
