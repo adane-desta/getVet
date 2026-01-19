@@ -24,7 +24,7 @@ return(
           <p>{feature.description}</p>
           <ul className={style.featureList}>
             {feature.items.map((item , ind) =>(
-              <li><i className="fas fa-check"></i>{item}</li>
+              <li key={ind}><i className="fas fa-check"></i>{item}</li>
             ))}
             
           </ul>

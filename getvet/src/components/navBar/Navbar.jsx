@@ -1,4 +1,5 @@
 import styles from './Navbar.module.css';
+import {Link} from 'react-router-dom'
 
 function Navbar({toggleMenu}) {
 
@@ -16,12 +17,12 @@ function Navbar({toggleMenu}) {
                         <a href="#features">Features</a>
                         <a href="#howItWorks">How It Works</a>
                         <a href="#testimonials">Testimonials</a>
-                        <a href="/frontEnd/html-files/loginpage.html" className={styles.loginBtn}>
+                        <Link to={'roleSelect'}>  className={styles.loginBtn}
                             Login
-                        </a>
-                        <a href="/join-us.html" className={styles.joinBtn}>
+                        </Link>
+                        <Link to = {'roleSelect'}> className={styles.joinBtn}
                             Join Now
-                        </a>
+                        </Link>
 
                         <div className={styles.languageSelector}>
                             <select id="languageSelector">
