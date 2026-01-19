@@ -38,10 +38,10 @@ function MobileMenu({open , toggleMenu}) {
           <a href="#testimonials" className={style.mobileNavLink} onClick={toggleMenu}>
             <i className="fas fa-comment-dots"></i> Testimonials
           </a>
-          <Link> href="/frontEnd/html-files/loginpage.html" className={style.mobileNavLink}
+          <Link> className={style.mobileNavLink}
             <i className="fas fa-sign-in-alt"></i> Login
           </Link>
-          <Link> href="/join-us.html" className={`${style.mobileNavLink} ${style.highlight}`}
+          <Link> className={`${style.mobileNavLink} ${style.highlight}`}
             <i className="fas fa-user-plus"></i> Join Now
           </Link>
         </div>
