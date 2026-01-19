@@ -17,10 +17,10 @@ function Navbar({toggleMenu}) {
                         <a href="#features">Features</a>
                         <a href="#howItWorks">How It Works</a>
                         <a href="#testimonials">Testimonials</a>
-                        <Link to={'roleSelect'}>  className={styles.loginBtn}
+                        <Link to={'/roleSelect'} className={styles.loginBtn} > 
                             Login
                         </Link>
-                        <Link to = {'roleSelect'}> className={styles.joinBtn}
+                        <Link to = {'/roleSelect'} className={styles.joinBtn}>
                             Join Now
                         </Link>
 
