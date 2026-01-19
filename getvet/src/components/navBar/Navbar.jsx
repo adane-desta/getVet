@@ -17,12 +17,12 @@ function Navbar({toggleMenu}) {
                         <a href="#features">Features</a>
                         <a href="#howItWorks">How It Works</a>
                         <a href="#testimonials">Testimonials</a>
-                        <Link to={'roleSelect'}> <a className={styles.loginBtn}>
+                        <Link to={'roleSelect'}>  className={styles.loginBtn}
                             Login
-                        </a></Link>
-                        <Link to = {'roleSelect'}> <a className={styles.joinBtn}>
+                        </Link>
+                        <Link to = {'roleSelect'}> className={styles.joinBtn}
                             Join Now
-                        </a></Link>
+                        </Link>
 
                         <div className={styles.languageSelector}>
                             <select id="languageSelector">
