@@ -9,7 +9,6 @@ function Login() {
       <p id="descriptionText">
         Log in to manage your animals' health or assist farmers.
       </p>
-
       <form id="loginForm">
         <input
           id="email"
