@@ -3,7 +3,7 @@ import './styles/global.css'
 import {Routes , Route} from 'react-router-dom'
 import Landing from './pages/landing/Landing'
 import Signup from './pages/auth/signup/Signup';
-import RoleSelect from './pages/roleSelect/RoleSelect';
+import RoleSelect from './pages/roleselectPage/RoleSelect';
 import Home from './pages/landing/Landing';
 import Login from './pages/auth/loginPage/Login';
 
