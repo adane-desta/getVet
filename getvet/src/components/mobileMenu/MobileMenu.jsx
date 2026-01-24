@@ -1,5 +1,5 @@
 import style from './MobileMenu.module.css';
-
+import {Link} from 'react-router-dom'
 function MobileMenu({open , toggleMenu}) {
 
   return (
@@ -38,12 +38,12 @@ function MobileMenu({open , toggleMenu}) {
           <a href="#testimonials" className={style.mobileNavLink} onClick={toggleMenu}>
             <i className="fas fa-comment-dots"></i> Testimonials
           </a>
-          <a href="/frontEnd/html-files/loginpage.html" className={style.mobileNavLink}>
+          <Link to={'/roleselect'} className={style.mobileNavLink}> 
             <i className="fas fa-sign-in-alt"></i> Login
-          </a>
-          <a href="/join-us.html" className={`${style.mobileNavLink} ${style.highlight}`}>
+          </Link>
+          <Link to={'/roleselect'} className={`${style.mobileNavLink} ${style.highlight}`}> 
             <i className="fas fa-user-plus"></i> Join Now
-          </a>
+          </Link>
         </div>
 
         <div className={style.mobileLanguage}>

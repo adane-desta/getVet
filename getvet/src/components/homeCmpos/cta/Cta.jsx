@@ -16,8 +16,8 @@ const CTA = () => {
           <a className={styles.btnCtaPrimary}>
               <i className="fas fa-user-plus"></i> Create Free Account
           </a>
-          <a class={styles.btnCtaSecondary}>
-              <i class="fas fa-sign-in-alt"></i> Existing User Login
+          <a className={styles.btnCtaSecondary}>
+              <i className="fas fa-sign-in-alt"></i> Existing User Login
             </a>
           </div>
 

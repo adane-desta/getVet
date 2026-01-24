@@ -2,8 +2,9 @@ import styles from './Signup.module.css';
 
 function Signup() {
   return (
-    <div className={styles.container}>
 
+    <>
+      <div>
       <div className={styles.header}>
         <h1>Join Our Community</h1>
         <p>Action for Animal Health</p>
@@ -11,36 +12,16 @@ function Signup() {
 
       {/* ===== FORM CONTAINER ===== */}
       <div className={styles.formContainer}>
-        {/* Language selector */}
-        <div className={styles.languageSelector}>
-          <select>
-            <option>English</option>
-          </select>
-        </div>
 
         {/* Form header */}
         <div className={styles.formHeader}>
           <h1>Join Our Community</h1>
-          <p>
-            Action for Animal Health is an initiative of <a href="#">Brooke</a>.
-          </p>
           <p>
             We will use your personal data to send you information on the Action
             for Animal Health initiative, including news, events, and
             publications. You can opt out at any time.
           </p>
         </div>
-
-        {/* Role toggle buttons */}
-        <div className={styles.toggleOptions}>
-          <button className={`${styles.roleBtn} ${styles.active}`}>
-            Join As Doctors
-          </button>
-          <button className={styles.roleBtn}>
-            Join As Farmers
-          </button>
-        </div>
-
         {/* Form */}
         <form>
           <div className={styles.formGroup}>
@@ -99,7 +80,9 @@ function Signup() {
           </button>
         </form>
       </div>
-    </div>
+      </div>
+    </>
+
   );
 }
 
