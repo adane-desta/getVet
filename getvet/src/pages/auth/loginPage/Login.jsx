@@ -1,6 +1,32 @@
+import { useState } from 'react';
 import styles from './Login.module.css';
 
 function Login() {
+
+  const [formData , setFormData] = useState({email: '' , password: ''})
+
+  const handleFormChange = (e) => {
+
+    const {id , value} = e.target;
+
+    setFormData( (prev) => ({...prev , [id]: value}))
+  }
+
+  const handleSubmit = (e) => {
+    console.log('submit clicked')
+    e.preventDefault()
+
+    if(!formData.email || !formData.password) {
+
+      console.log('error: something went wrong')
+      return;
+    }
+    if(formData.email === 'adane@fake.com' && formData.password === '12345'){
+      console.log('login successful')
+    }
+
+
+  }
   return (
     <div className={styles.pageWrapper}>
     <div className={styles.loginContainer}>
@@ -10,18 +36,20 @@ function Login() {
       <p id="descriptionText">
         Log in to manage your animals' health or assist farmers.
       </p>
-      <form id="loginForm">
+      <form id="loginForm" onSubmit={handleSubmit}>
         <input
           id="email"
           type="email"
           placeholder="Email"
           required
+          onChange={handleFormChange}
         />
         <input
           id="password"
           type="password"
           placeholder="Password"
           required
+          onChange={handleFormChange}
         />
         <button type="submit" id="loginBtn">
           Log In
