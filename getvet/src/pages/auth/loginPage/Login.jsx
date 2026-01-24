@@ -1,6 +1,16 @@
+import { useState } from 'react';
 import styles from './Login.module.css';
 
 function Login() {
+
+  const [formData , setFormData] = useState({email:'' , password:''})
+
+  const handleFormChange = (e) => {
+
+    const {id , value} = e.target;
+
+    setFormData( (prev) => ({...prev , [id]: value}))
+  }
   return (
     <div className={styles.pageWrapper}>
     <div className={styles.loginContainer}>
@@ -16,6 +26,7 @@ function Login() {
           type="email"
           placeholder="Email"
           required
+          onChange={handleFormChange}
         />
         <input
           id="password"
