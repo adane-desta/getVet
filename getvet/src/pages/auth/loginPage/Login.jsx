@@ -11,6 +11,19 @@ function Login() {
 
     setFormData( (prev) => ({...prev , [id]: value}))
   }
+
+  const handleSubmit = (e) => {
+
+    e.preventDefault()
+
+    if(!formData.email || !formData.password) {
+
+      console.log('error: something went wrong')
+      return;
+    }
+
+
+  }
   return (
     <div className={styles.pageWrapper}>
     <div className={styles.loginContainer}>
