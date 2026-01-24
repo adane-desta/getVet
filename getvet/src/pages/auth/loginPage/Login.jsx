@@ -3,7 +3,7 @@ import styles from './Login.module.css';
 
 function Login() {
 
-  const [formData , setFormData] = useState({email:'' , password:''})
+  const [formData , setFormData] = useState({email: '' , password: ''})
 
   const handleFormChange = (e) => {
 
@@ -13,7 +13,7 @@ function Login() {
   }
 
   const handleSubmit = (e) => {
-
+    console.log('submit clicked')
     e.preventDefault()
 
     if(!formData.email || !formData.password) {
@@ -33,7 +33,7 @@ function Login() {
       <p id="descriptionText">
         Log in to manage your animals' health or assist farmers.
       </p>
-      <form id="loginForm">
+      <form id="loginForm" onSubmit={handleSubmit}>
         <input
           id="email"
           type="email"
@@ -46,6 +46,7 @@ function Login() {
           type="password"
           placeholder="Password"
           required
+          onChange={handleFormChange}
         />
         <button type="submit" id="loginBtn">
           Log In
