@@ -5,6 +5,7 @@ import Landing from './pages/landing/Landing'
 import Signup from './pages/auth/signup/Signup';
 import RoleSelect from './pages/roleSelect/RoleSelect';
 import Home from './pages/landing/Landing';
+import Login from './pages/auth/loginPage/Login';
 
 function App(){
     return(
