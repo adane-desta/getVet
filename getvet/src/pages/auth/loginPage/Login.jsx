@@ -21,6 +21,9 @@ function Login() {
       console.log('error: something went wrong')
       return;
     }
+    if(formData.email === 'adane@fake.com' && formData.password === '12345'){
+      console.log('login successful')
+    }
 
 
   }
