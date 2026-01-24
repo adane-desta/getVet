@@ -2,6 +2,7 @@ import styles from './Login.module.css';
 
 function Login() {
   return (
+    <div className={styles.pageWrapper}>
     <div className={styles.loginContainer}>
 
       <h1 id="welcomeText">Welcome Back</h1>
@@ -33,6 +34,7 @@ function Login() {
           Join Us
         </a>
       </p>
+    </div>
     </div>
   );
 }
