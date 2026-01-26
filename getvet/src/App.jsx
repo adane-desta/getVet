@@ -18,7 +18,14 @@ function App(){
                 <Route path='/login' element={ <Login /> } />
                 <Route path='/signup' element={ <Signup /> } />
                 <Route path='/roleSelect' element={ <RoleSelect /> } />
-                <Route path='/home' element={ <Home /> } />
+                
+                <Route path='/home' 
+                element={ 
+                <ProtectedRoute role = 'farmer'>
+                    <Home />
+                </ProtectedRoute>  
+                } 
+                />
             </Routes>
 
         </div>
