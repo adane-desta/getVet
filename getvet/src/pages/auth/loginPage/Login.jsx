@@ -46,12 +46,11 @@ function Login() {
 
       login(
         {
-          user: formData,
+          userData: formData,
           jwt: 'abcdwxyz1234' 
         }
       )
      
-
     }else{
 
       console.log('wrong credential')
