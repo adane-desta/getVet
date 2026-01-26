@@ -1,13 +1,21 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './Login.module.css';
-import {useNavigation} from 'react-router-dom'
+import {useNavigate} from 'react-router-dom'
 import { useAuth } from '../../../contexts/AuthContext';
 
 function Login() {
 
   const [formData , setFormData] = useState({email: '' , password: '' , role: ''})
   const {selectedRole , login} = useAuth()
-  const navigation = useNavigation()
+  const navigation = useNavigate()
+
+  useEffect(    ()=>{
+
+      if(!selectedRole) {
+        navigation('/roleSelect')
+     }
+    } , [])
+
 
   const handleFormChange = (e) => {
 
