@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import styles from './Login.module.css';
+import {useNavigation} from 'react-router-dom'
 import { useAuth } from '../../../contexts/AuthContext';
 
 function Login() {
 
-  const [formData , setFormData] = useState({email: '' , password: ''})
-  const {login} = useAuth()
+  const [formData , setFormData] = useState({email: '' , password: '' , role: ''})
+  const {selectedRole , login} = useAuth()
+  const navigation = useNavigation()
 
   const handleFormChange = (e) => {
 
@@ -18,16 +20,35 @@ function Login() {
 
     e.preventDefault()
 
+    if(!selectedRole) {
+       navigation('/roleSelect')
+       return;
+    }
+
     if(!formData.email || !formData.password) {
 
       console.log('error: something went wrong')
+      localStorage.removeItem('token')
       return;
     }
+
     if(formData.email === 'adane@fake.com' && formData.password === '12345'){
       console.log('login successful')
-      localStorage.setItem('user' , formData)
+      setFormData( prev => ({...prev , role: selectedRole}))
+
+      login(
+        {
+          user: formData,
+          jwt: 'abcdwxyz1234' 
+        }
+      )
+     
+
     }else{
-      alert('wrong cridential')
+
+      console.log('wrong credential')
+      localStorage.removeItem('token')
+      return;
     }
 
 
