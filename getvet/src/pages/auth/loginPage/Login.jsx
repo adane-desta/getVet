@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import styles from './Login.module.css';
+import { useAuth } from '../../../contexts/AuthContext';
 
 function Login() {
 
   const [formData , setFormData] = useState({email: '' , password: ''})
+  const {login} = useAuth()
 
   const handleFormChange = (e) => {
 
@@ -13,7 +15,7 @@ function Login() {
   }
 
   const handleSubmit = (e) => {
-    console.log('submit clicked')
+
     e.preventDefault()
 
     if(!formData.email || !formData.password) {
@@ -23,6 +25,9 @@ function Login() {
     }
     if(formData.email === 'adane@fake.com' && formData.password === '12345'){
       console.log('login successful')
+      localStorage.setItem('user' , formData)
+    }else{
+      alert('wrong cridential')
     }
 
 
