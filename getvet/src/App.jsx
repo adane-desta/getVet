@@ -20,9 +20,9 @@ function App(){
                 <Route
                 path='/farmerHome'
                 element = {
-                    <ProtectedRoute>
+
                         <FarmerHomePage />
-                    </ProtectedRoute>
+
                 }
                 />
             </Routes>

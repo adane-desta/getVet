@@ -1,11 +1,13 @@
 
 import styles from './FarmerHome.module.css'
+import FarmerHeader from './farmerNav/fheader'
 
 function FarmerHomePage() {
   return (
     <>
       {/* Navigation Bar */}
-      <div id="navbar"></div>
+      
+      <FarmerHeader />
 
       <header className={styles.header}>
         <h1>Professional Advice for Your Animal Health</h1>
