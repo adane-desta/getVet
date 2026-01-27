@@ -8,6 +8,7 @@ import RoleSelect from './pages/roleselectPage/RoleSelect';
 import Login from './pages/auth/loginPage/Login';
 import FarmerHomePage from './pages/farmer/farmerDasboard/farmerHomePage/FarmerHome';
 import ResourcePage from './pages/farmer/resource/Resource';
+import ConsultVet from './pages/farmer/consultVet/consultVeternerian';
 
 function App(){
     return(
@@ -19,6 +20,7 @@ function App(){
                 <Route path='/signup' element={ <Signup /> } />
                 <Route path='/roleSelect' element={ <RoleSelect /> } />
                 <Route path='/resourcePage' element={ <ResourcePage /> } />
+                <Route path='/consultVet' element={ <ConsultVet /> } />
                 <Route
                 path='/farmerHome'
                 element = {
