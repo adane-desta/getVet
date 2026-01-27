@@ -50,7 +50,8 @@ function Login() {
           jwt: 'abcdwxyz1234' 
         }
       )
-     
+
+      navigation('/farmerHome')
     }else{
 
       console.log('wrong credential')
