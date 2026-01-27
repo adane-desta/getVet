@@ -1,6 +1,6 @@
 
 import styles from './FarmerHome.module.css'
-import FarmerHeader from './farmerNav/fheader'
+import FarmerHeader from '../farmerNav/fheader'
 
 function FarmerHomePage() {
   return (

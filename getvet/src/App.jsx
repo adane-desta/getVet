@@ -6,7 +6,7 @@ import Signup from './pages/auth/signup/Signup';
 import ProtectedRoute from './pages/auth/ProtectedRoute'
 import RoleSelect from './pages/roleselectPage/RoleSelect';
 import Login from './pages/auth/loginPage/Login';
-import FarmerHomePage from './pages/farmer/farmerDasboard/farmerHome';
+import FarmerHomePage from './pages/farmer/farmerDasboard/farmerHomePage/FarmerHome';
 
 function App(){
     return(
