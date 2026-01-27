@@ -16,8 +16,6 @@ function News() {
         className={styles.newsSection}
       ></section>
 
-      <div id="chatbotContainer"></div>
-      <div id="footer"></div>
     </>
   );
 }
