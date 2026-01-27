@@ -1,6 +1,7 @@
 import { StrictMode, useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
 import styles from './fheader.module.css'
+import { Link } from "react-router-dom";
 
 const translations = {
     en: {
@@ -65,12 +66,11 @@ function FarmerHeader() {
                 </select>
             </div>
             <ul>
-                <li><a id="mine" href="../html-files/homePage.html">{home}</a></li>
-                <li><a id="ninkeDafira" href="../html-files/aboutPage.html">{about}</a></li>
-                <li><a id="odoo" href="../html-files/news_and_event.html">{news}</a></li>
-                <li><a id="bue" href="../html-files/resources.html">{resources}</a></li>
-                <li><a id="sejo" href="../html-files/consult_vet.html">{consultVet}</a></li>
-                <li><a id="miloma" href="../html-files/join-us.html">{joinUs}</a></li>
+                <li> <Link id="mine" to={'/farmerHome'}>{home}</Link></li>
+                <li><Link id="odoo" to={'/news'}>{news}</Link></li>
+                <li><Link id="bue" to={'/resource'}>{resources}</Link></li>
+                <li><Link id="sejo" to={'/consultVet'}>{consultVet}</Link></li>
+                
                 
             </ul>
         </nav>
