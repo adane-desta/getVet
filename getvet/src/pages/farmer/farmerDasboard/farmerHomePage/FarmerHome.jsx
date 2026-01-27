@@ -34,7 +34,7 @@ function FarmerHomePage() {
 
             <div className={styles.aboutImage}>
               <img
-                src="/dbResources/images/farm-animals.jpg.jpg"
+                src='./assets/farm-animals.jpg.jpg'
                 alt="Farm animals"
               />
             </div>
