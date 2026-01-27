@@ -23,11 +23,11 @@ export function AuthProvider({children}){
 
     } , [])
 
-    const login = (user , jwt) => {
+    const login = ({userData , jwt}) => {
 
-        localStorage.setItem('user' , JSON.stringify(user))
+        localStorage.setItem('user' , JSON.stringify(userData))
         localStorage.setItem('token' , jwt)
-        setUser(user)
+        setUser(userData)
         setToken(jwt)
     }
 
