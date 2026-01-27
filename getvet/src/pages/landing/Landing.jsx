@@ -8,7 +8,7 @@ import Testimonials from '../../components/homeCmpos/testimonials/Testimonials.j
 import MobileMenu from '../../components/mobileMenu/MobileMenu.jsx';
 import Navbar from '../../components/navBar/Navbar.jsx';
 import useMobileMenu from '../../hooks/useMobileMenu.js'
-function Home(){
+function Landing(){
 
     const {open , toggleMenu} = useMobileMenu()
 
@@ -26,4 +26,4 @@ function Home(){
     )
 }
 
-export default Home;
+export default Landing;
