@@ -2,6 +2,10 @@
 import styles from './FarmerHome.module.css'
 import FarmerHeader from '../farmerNav/fheader'
 import farmAnimal from '../../../../assets/farm-animals.jpg'
+import animalDiseases from '../../../../assets/Animal_Diseases_Icons.png'
+import healthResoorce from '../../../../assets/healthResoorce.jpg'
+import supportfarmer from '../../../../assets/supportfarmer.jpg'
+import vetdoctor from '../../../../assets/vetdoctor.jpg'
 
 function FarmerHomePage() {
   return (
