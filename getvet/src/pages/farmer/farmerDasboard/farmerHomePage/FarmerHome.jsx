@@ -1,6 +1,7 @@
 
 import styles from './FarmerHome.module.css'
 import FarmerHeader from '../farmerNav/fheader'
+import farmAnimal from '../../../../assets/farm-animals.jpg'
 
 function FarmerHomePage() {
   return (
@@ -34,7 +35,7 @@ function FarmerHomePage() {
 
             <div className={styles.aboutImage}>
               <img
-                src='./assets/farm-animals.jpg.jpg'
+                src={farmAnimal}
                 alt="Farm animals"
               />
             </div>
