@@ -51,7 +51,7 @@ function Login() {
         }
       )
 
-      navigation('/home')
+      navigation('/farmerHome')
     }else{
 
       console.log('wrong credential')
