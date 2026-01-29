@@ -12,7 +12,7 @@ function ResourcePage() {
       </header>
 
       <section id="resource_section" className={styles.ResourcesSection}>
-        {/* Resource items will be injected dynamically */}
+
       </section>
 
       <div id="chatbotContainer"></div>
