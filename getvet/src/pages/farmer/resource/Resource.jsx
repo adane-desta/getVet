@@ -1,7 +1,12 @@
 import FarmerHeader from "../farmerDasboard/farmerNav/fheader";
 import styles from "./Resource.module.css";
+import ResourceItem from "./ResourseItem";
+import useResource from "./useResource";
 
 function ResourcePage() {
+
+  const resources = useResource()
+
   return (
     <>
       <FarmerHeader />
@@ -11,12 +16,8 @@ function ResourcePage() {
         <p>disease protection And Prevention</p>
       </header>
 
-      <section id="resource_section" className={styles.ResourcesSection}>
-        {/* Resource items will be injected dynamically */}
-      </section>
+      <ResourceItem resources={resources} />
 
-      <div id="chatbotContainer"></div>
-      <div id="footer"></div>
     </>
   );
 }

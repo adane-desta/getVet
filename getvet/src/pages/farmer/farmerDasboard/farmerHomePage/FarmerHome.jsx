@@ -1,6 +1,11 @@
 
 import styles from './FarmerHome.module.css'
 import FarmerHeader from '../farmerNav/fheader'
+import farmAnimal from '../../../../assets/farm-animals.jpg'
+import Animal_Diseases_Icons from '../../../../assets/Animal_Diseases_Icons.png'
+import healthResoorce from '../../../../assets/healthResoorce.jpg'
+import supportfarmer from '../../../../assets/supportfarmer.png'
+import vetdoctor from '../../../../assets/vetdoctor.avif'
 
 function FarmerHomePage() {
   return (
@@ -34,7 +39,7 @@ function FarmerHomePage() {
 
             <div className={styles.aboutImage}>
               <img
-                src="/dbResources/images/farm-animals.jpg.jpg"
+                src={farmAnimal}
                 alt="Farm animals"
               />
             </div>
@@ -50,7 +55,7 @@ function FarmerHomePage() {
           <div className={styles.serviceCards}>
             <div className={styles.serviceCard}>
               <img
-                src="/dbResources/images/vetdoctor.avif"
+                src= {vetdoctor}
                 alt="Veterinary Consultation"
               />
               <h3>Veterinary Consultation</h3>
@@ -65,7 +70,7 @@ function FarmerHomePage() {
 
             <div className={styles.serviceCard}>
               <img
-                src="/dbResources/images/healthResoorce.jpg"
+                src= {healthResoorce}
                 alt="Animal Health Resources"
               />
               <h3>Health Resources</h3>
@@ -80,7 +85,7 @@ function FarmerHomePage() {
 
             <div className={styles.serviceCard}>
               <img
-                src="/dbResources/images/Animal_Diseases_Icons.png"
+                src = {Animal_Diseases_Icons}
                 alt="Disease Control"
               />
               <h3>Disease Control</h3>
@@ -96,7 +101,7 @@ function FarmerHomePage() {
 
             <div className={styles.serviceCard}>
               <img
-                src="/dbResources/images/supportfarmer.png"
+                src={supportfarmer}
                 alt="Farmer Support"
               />
               <h3>Farmer Support</h3>
