@@ -1,5 +1,5 @@
 
-import styles 
+import styles from './resource.module.css'
 
 function ResourceItem({resources}) {
 
@@ -9,14 +9,14 @@ function ResourceItem({resources}) {
 
             { resources.map( (resource , index) => (
 
-                <div className="resourceItem withImage">
-                <img src={image} alt={alt} />
-                <div className="resourceContent">
-                <div className="resourceCadge">{badge}</div>
-                <h2>{title}</h2>
-                <p>{description}</p>
-                <p className="resourceDate">{date}</p>
-                <a href={actual_resourse_url} className="btn" target='_blank'>Watch/Read</a>
+                <div key={index} className={`${styles.resourceItem} ${styles.withImage}`}>
+                <img src={resource.image_url} alt={resource.title} />
+                <div className={styles.resourceContent}>
+                <div className={styles.resourceCadge}>{resource.type}</div>
+                <h2>{resource.title}</h2>
+                <p>{resource.description}</p>
+                <p className={styles.resourceDate}>{resource.created_at}</p>
+                <a href={resource.actual_resource_url} className={styles.btn} target='_blank'>Watch/Read</a>
                 </div>
 
                 </div>
