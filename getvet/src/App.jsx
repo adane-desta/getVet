@@ -9,7 +9,7 @@ import Login from './pages/auth/loginPage/Login';
 import FarmerHomePage from './pages/farmer/farmerDasboard/farmerHomePage/FarmerHome';
 import ResourcePage from './pages/farmer/resource/Resource';
 import ConsultVet from './pages/farmer/consultVet/consultVeternerian';
-import News from './pages/farmer/newsEvent/News';
+import News from './pages/farmer/newsEvent/NewsEvent';
 
 function App(){
     return(

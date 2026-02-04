@@ -1,7 +1,12 @@
 import FarmerHeader from "../farmerDasboard/farmerNav/fheader";
 import styles from "./News.module.css";
+import NewsItem from "./newsItem";
+import useNewsEvent from "./useNewsEvent";
+
 
 function News() {
+
+  const newsEvent = useNewsEvent();
   return (
     <>
       <FarmerHeader />
@@ -11,13 +16,9 @@ function News() {
         <p>Animal Health News</p>
       </header>
 
-      <section
-        id="news_section"
-        className={styles.newsSection}
-      ></section>
-
-      <div id="chatbotContainer"></div>
-      <div id="footer"></div>
+      <NewsItem newsEvent = {newsEvent}/>
+      
+      
     </>
   );
 }
