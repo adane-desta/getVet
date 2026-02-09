@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "cd getvet && vite",
-    "build": "cd getvet && vite build",
-    "start": "cd getvet && vite preview",
-    "lint": "cd getvet && eslint ."
+    "dev": "cd getvet && npm run dev",
+    "build": "cd getvet && npm run build",
+    "start": "cd getvet && npm run preview",
+    "lint": "cd getvet && npm run lint"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
