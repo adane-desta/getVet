@@ -1,6 +1,6 @@
 import FarmerHeader from "../farmerDasboard/farmerNav/fheader";
 import styles from "./News.module.css";
-import NewsItem from "./newsItem";
+import NewsItem from "./NewsItem";
 import useNewsEvent from "./useNewsEvent";
 
 

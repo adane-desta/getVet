@@ -1,5 +1,5 @@
 
-import styles from './resource.module.css'
+import styles from './Resource.module.css'
 
 function ResourceItem({resources}) {
 
