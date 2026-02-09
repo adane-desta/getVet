@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "postinstall": "cd getvet && npm install",
     "dev": "cd getvet && npm run dev",
     "build": "cd getvet && npm run build",
     "start": "cd getvet && npm run preview",
