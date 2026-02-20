@@ -42,11 +42,10 @@ function Login() {
 
     if(formData.email === 'adane@fake.com' && formData.password === '12345'){
       console.log('login successful')
-      setFormData( prev => ({...prev , role: selectedRole}))
 
       login(
         {
-          userData: formData,
+          userData: {...formData, role: selectedRole},
           jwt: 'abcdwxyz1234' 
         }
       )
@@ -71,6 +70,7 @@ function Login() {
         Log in to manage your animals' health or assist farmers.
       </p>
       <form id="loginForm" onSubmit={handleSubmit}>
+
         <input
           id="email"
           type="email"
