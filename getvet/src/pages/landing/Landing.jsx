@@ -1,5 +1,5 @@
 
-import Footer from '../../components/Footer/Footer.jsx';
+import Footer from '../../components/footer/Footer.jsx';
 import Cta from '../../components/homeCmpos/cta/Cta.jsx';
 import Features from '../../components/homeCmpos/features/Features.jsx';
 import Hero from '../../components/homeCmpos/hero/Hero.jsx';
